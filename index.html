@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Header-->
@@ -75,7 +75,7 @@
 
       <section class="section">
         <div class="container">
-          <h2 class="hidden">Наши преимущества</h2>
+          <h2 class="visualy-hidden">Наши преимущества</h2>
           <ul class="features-list">
             <li class="features-list__item">
               <div class="features-list__bgr">
@@ -569,7 +569,7 @@
     <!-- Modal backdrop -->
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
+      <div class="backdrop__modal">
         <button class="btn-close" type="button" data-modal-close>
           <svg class="btn-close__icon" width="11" height="11">
             <use href="./images/icons.svg#icon-close"></use>
@@ -622,7 +622,7 @@
             ></textarea>
           </label>
           <input
-            class="label-checkbox__input hidden"
+            class="label-checkbox__input visualy-hidden"
             id="checkbox_user_agreement"
             type="checkbox"
             name="user_agreement"
