@@ -26,12 +26,14 @@
   border-radius: 4px;
   transition: transform 250ms var(--cubic-beizer-hover), opacity 250ms var(--cubic-beizer-hover),
     visibility 250ms var(--cubic-beizer-hover);
+
+  .is-hidden & {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
 }
-.backdrop.is-hidden .backdrop__modal {
-  transform: translate(-50%, -50%) scale(0.5);
-  opacity: 0;
-  visibility: hidden;
-}
+
 .btn-close {
   position: absolute;
   display: flex;
@@ -50,8 +52,8 @@
 .btn-close__icon {
   fill: #000000;
   transition: fill 250ms var(--cubic-beizer-hover);
-}
-.btn-close:focus .btn-close__icon,
-.btn-close:hover .btn-close__icon {
-  fill: var(--accent-color);
+  .btn-close:focus &,
+  .btn-close:hover & {
+    fill: var(--accent-color);
+  }
 }

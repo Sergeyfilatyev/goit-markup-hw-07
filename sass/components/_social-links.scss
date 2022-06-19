@@ -15,12 +15,13 @@
   border-radius: 50%;
   background-color: transparent;
   transition: background-color 250ms var(--cubic-beizer-hover);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    outline: none;
+  }
 }
-.social-list__link:hover,
-.social-list__link:focus {
-  background-color: var(--accent-color);
-  outline: none;
-}
+
 .social-list__icon--light {
   fill: var(--fill-icon-color);
   transition: fill 250ms var(--cubic-beizer-hover);

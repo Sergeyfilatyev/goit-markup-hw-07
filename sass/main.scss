@@ -2,6 +2,8 @@
 @import './utils/visualy-hidden';
 
 @import './base/common';
+@import './base/container';
+@import './base/section';
 
 @import './components/logo';
 @import './components/social-links';
@@ -14,8 +16,8 @@
 @import './components/team-section';
 @import './components/clients-section';
 
-@import './components/filter-menu';
-@import './components/projects-section';
+@import './components/filter-portfolio';
+@import './components/projects-portfolio';
 
 @import './components/footer';
 

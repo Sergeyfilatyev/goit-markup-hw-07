@@ -23,10 +23,11 @@
 }
 .features-list__item {
   width: calc((100% - 90px) / 4);
+  &:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
 }
-.features-list__item:not(:nth-child(4n)) {
-  margin-right: 30px;
-}
+
 .features-list__content {
   font-size: 14px;
   line-height: 1.7;
