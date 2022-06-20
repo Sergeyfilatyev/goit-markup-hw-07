@@ -1,7 +1,7 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--background-dark-color);
+  background-color: $background-dark-color;
 }
 .footer__container {
   display: flex;
@@ -15,20 +15,18 @@
   margin-bottom: 9px;
 }
 .address__link {
-  display: block;
-  color: var(--footer-color);
+  @include font(400, 14px, 24px);
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
   letter-spacing: 0.03em;
-  transition: color 250ms var(--cubic-beizer-hover);
+  display: block;
+  color: $footer-color;
+  transition: color 250ms $cubic-beizer-hover;
   &--white {
-    color: var(--white-text-color);
+    color: $white-text-color;
   }
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
@@ -37,12 +35,10 @@
 }
 .join__title {
   margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(700, 14px, 16px);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--white-text-color);
+  color: $white-text-color;
 }
 
 .footer-form {
@@ -51,12 +47,10 @@
 .footer-form__label {
   display: block;
   margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(700, 14px, 16px);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--white-text-color);
+  color: $white-text-color;
 }
 .footer-form__wrap {
   display: flex;
@@ -68,40 +62,37 @@
   height: 50px;
   padding: 15px;
   margin-right: 12px;
-  font-size: 16px;
-  line-height: 1.25;
+  @include font(400, 16px, 20px);
   letter-spacing: 0.03em;
-  color: var(--footer-color);
+  color: $footer-color;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   &::placeholder {
-    color: var(--footer-color);
+    color: $footer-color;
   }
 }
 
 .footer-form__btn {
-  padding: 10px 29px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
   display: flex;
   align-items: center;
+  padding: 10px 29px;
+  @include font(700, 16px, 30px);
+  letter-spacing: 0.06em;
   cursor: pointer;
   border-radius: 4px;
   border: none;
-  color: var(--white-text-color);
-  background-color: var(--accent-color);
+  color: $white-text-color;
+  background-color: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: background-color 250ms var(--cubic-beizer-hover);
+  transition: background-color 250ms $cubic-beizer-hover;
   &:focus,
   &:hover {
-    background-color: var(--btn-hover);
+    background-color: $btn-hover;
   }
 }
 
 .footer-form__icon {
-  fill: var(--white-text-color);
+  fill: $white-text-color;
   margin-left: 10px;
 }
