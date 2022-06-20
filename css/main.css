@@ -64,7 +64,7 @@ a {
   color: #2196f3;
 }
 
-.logo-header {
+.header__logo {
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
@@ -74,7 +74,7 @@ a {
   color: #212121;
 }
 
-.logo-footer {
+.footer__logo {
   margin-left: auto;
   margin-bottom: 20px;
 }
