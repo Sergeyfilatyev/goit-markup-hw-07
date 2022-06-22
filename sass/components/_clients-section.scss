@@ -1,19 +1,13 @@
-.clients__title {
-  margin-bottom: 50px;
-  @include font(700, 36px, 42px);
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: $title-color;
-}
-.clients__list {
+.clients {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
 }
 .clients__item {
   width: calc((100% - 150px) / 6);
-  &:not(:nth-child(6n)) {
+  &:not(:last-child) {
     margin-right: 30px;
   }
 }

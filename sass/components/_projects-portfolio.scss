@@ -28,7 +28,7 @@
   letter-spacing: 0.06em;
   color: $title-color;
 }
-.projects__content {
+.projects__text {
   @include font(400, 16px, 30px);
   letter-spacing: 0.03em;
   color: $main-color;
@@ -60,7 +60,7 @@
     transform: translateY(0%);
   }
 }
-.overlay__content {
+.overlay__text {
   width: 322px;
   height: auto;
   @include font(400, 18px, 28px);

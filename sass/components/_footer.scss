@@ -11,10 +11,10 @@
   flex-grow: 1;
 }
 
-.address__item:not(:last-child) {
+.address-menu__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.address__link {
+.address-menu__link {
   @include font(400, 14px, 24px);
   font-style: normal;
   letter-spacing: 0.03em;

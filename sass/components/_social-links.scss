@@ -26,10 +26,13 @@
   fill: $fill-icon-color;
   transition: fill 250ms $cubic-beizer-hover;
 }
-.social-list__link:hover .social-list__icon,
-.social-list__link:focus .social-list__icon {
-  fill: $white-text-color;
+.social-list__icon {
+  .social-list__link:hover &,
+  .social-list__link:focus & {
+    fill: $white-text-color;
+  }
 }
+
 .social-list__icon--dark {
   fill: $white-text-color;
 }
